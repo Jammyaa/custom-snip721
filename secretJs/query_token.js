@@ -31,7 +31,7 @@ const customFees = {
 const main = async () => {
   const httpUrl = process.env.SECRET_REST_URL;
 
-  // Use key created in tutorial #2
+  // mnemonic
   const mnemonic = process.env.MNEMONIC;
 
   // A pen is the most basic tool you can think of for signing.
@@ -77,7 +77,7 @@ const main = async () => {
     console.log(
       'No token was found for you account, make sure that the minting step completed successfully'
     );
-  const token_id = response.token_list.tokens[0];
+  const token_id = response.token_list.tokens[4];
 
   // 2. Query the public metadata
   queryMsg = {
