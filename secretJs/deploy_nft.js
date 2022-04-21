@@ -58,7 +58,7 @@ const {
     );
     console.log(`Wallet address=${accAddress}`);
     // 2. Upload the contract wasm
-    const wasm = fs.readFileSync('custom-snip721/contract.wasm');
+    const wasm = fs.readFileSync('./contract.wasm');
     console.log('Uploading contract');
     const uploadReceipt = await client.upload(wasm, {})
       .catch((err) => { throw new Error(`Could not upload contract: ${err}`); });
@@ -73,7 +73,7 @@ const {
       /// token contract symbol
       symbol: 'TVFT',
       /// entropy used for prng seed
-      entropy: '',
+      entropy: 'qwyugwirqrqoirbhfbjhdvy',
       /// optional privacy configuration for the contract
       config: {
           public_owner: true

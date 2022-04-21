@@ -8,7 +8,7 @@ const {
   
   // Requiring the dotenv package in this way
   // lets us use environment variables defined in .env
-  require("dotenv").config();
+  require("dotenv").config({path:'./.env'});
   
   const customFees = {
     upload: {
@@ -30,9 +30,9 @@ const {
   };
   
   const main = async () => {
-    const httpUrl = process.env.SECRET_REST_URL;
+    const httpUrl = process.env.SECRET_REST_URL;;
   
-    // Use the mnemonic created in step #2 of the Secret Pathway
+    // mnemonic
     const mnemonic = process.env.MNEMONIC;
   
     // A pen is the most basic tool you can think of for signing.
