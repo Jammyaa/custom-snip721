@@ -62,7 +62,8 @@ const {
     console.log('Uploading contract');
     const uploadReceipt = await client.upload(wasm, {})
       .catch((err) => { throw new Error(`Could not upload contract: ${err}`); });
-  
+    
+    console.log(uploadReceipt);
     // Get the code ID from the receipt
     const { codeId } = uploadReceipt;
     // 3. Create an instance of the NFT contract init msg
@@ -89,7 +90,7 @@ const {
         throw new Error(`Could not instantiate contract: ${err}`);
       });
     const { contractAddress } = contract;
-    console.log("contract: ", contract, "address:", contractAddress);
+    console.log("init contract: ", contract, "address:", contractAddress);
   };
   
   main().catch((err) => {

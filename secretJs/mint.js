@@ -8,7 +8,7 @@ const {
   
   // Requiring the dotenv package in this way
   // lets us use environment variables defined in .env
-  require("dotenv").config({path:'./.env'});
+  require("dotenv").config();
   
   const customFees = {
     upload: {
