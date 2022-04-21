@@ -1,0 +1,1 @@
+curl "http://localhost:5000/faucet?address=secret1x5acl3zquj7kke953sxlkljqgrd3594kvtfd8d"

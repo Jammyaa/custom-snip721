@@ -1,0 +1,16 @@
+{
+    "name": "snip721js",
+    "version": "1.0.0",
+    "description": "Interactive with snip721 contract",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "chinhnotional <eyescryptoinsights@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@iov/crypto": "^2.5.0",
+        "dotenv": "^16.0.0",
+        "secretjs": "^0.17.5"
+    }
+}
