@@ -77,7 +77,8 @@ const {
       entropy: 'qwyugwirqrqoirbhfbjhdvy',
       /// optional privacy configuration for the contract
       config: {
-          public_owner: true
+          public_owner: true,
+          public_token_supply: true
       },
     }
     const contract = await client
